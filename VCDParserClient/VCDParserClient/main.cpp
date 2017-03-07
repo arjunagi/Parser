@@ -26,15 +26,12 @@ int main(int argc, const char * argv[]) {
         fs.sendFiles(connection.getSocket());
         
         connection.closeSocket();
-    }
-    catch (exception& e) {
+    } catch (exception& e) {
         cerr <<"\nClient Exception: " << e.what() <<endl;
-    }
-    catch (boost::system::error_code ec) {
+    } catch (boost::system::error_code ec) {
         //Exception thrown when connection to server failed
         cerr<< ec.message() << "\n";
-    }
-    catch (std::string s) {
+    } catch (std::string s) {
         //Exception thrown when opening of socket failed.
         cerr<< s << "\n";
     }
