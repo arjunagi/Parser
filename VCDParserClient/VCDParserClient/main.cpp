@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
         cerr <<"\nClient Exception: " << e.what() <<endl;
     } catch (boost::system::error_code ec) {
         //Exception thrown when connection to server failed
-        cerr<< ec.message() << "\n";
+        cerr<< ec.message() << endl;
     } catch (std::string s) {
         //Exception thrown when opening of socket failed.
         cerr<< s << "\n";
