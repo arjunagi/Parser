@@ -15,7 +15,6 @@
  * 3. Provides a method to explicitly close the socket
  */
 
-
 //Initialize the socket
 ConnectionSetUp::ConnectionSetUp() : socket(io_service) {
 }

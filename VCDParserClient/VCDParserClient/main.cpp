@@ -26,6 +26,7 @@ int main(int argc, const char * argv[]) {
         fs.sendFiles(connection.getSocket());
         
         connection.closeSocket();
+        
     } catch (exception& e) {
         cerr <<"\nClient Exception: " << e.what() <<endl;
     } catch (boost::system::error_code ec) {
