@@ -21,7 +21,6 @@ int main(int argc, const char * argv[]) {
     try{
         ConnectionSetUp connection;
         connection.setUpUnixSocket();
-        
         FileSender fs;
         fs.sendFiles(connection.getSocket());
         
