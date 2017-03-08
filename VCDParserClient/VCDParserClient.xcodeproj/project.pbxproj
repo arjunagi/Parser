@@ -381,7 +381,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					/usr/local/Cellar/boost/1.60.0_1/include,
-					"/Users/Karthik/Documents/c++\\ project/VCDParserClient/turtle-1.3.0/include",
+					"/Users/Karthik/Documents/parser_project/VCDParserClient/turtle-1.3.0/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,7 +399,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					sr/local/Cellar/boost/1.60.0_1/include,
-					"/Users/Karthik/Documents/c++\\ project/VCDParserClient/turtle-1.3.0/include",
+					"/Users/Karthik/Documents/parser_project/VCDParserClient/turtle-1.3.0/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
