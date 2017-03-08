@@ -1091,12 +1091,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF10E30E07400294801 /* DebugProject.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_VERSION = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
-				SYMROOT = "/Users/Karthik/Documents/c++ project/googletest/googletest/xcode/build/Debug/";
+				SYMROOT = "/Users/Karthik/Documents/c++\\ project/googletest/googletest/xcode/build/Debug/";
 			};
 			name = Debug;
 		};
@@ -1104,10 +1105,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF40E30E07400294801 /* ReleaseProject.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				GCC_VERSION = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				SYMROOT = "/Users/Karthik/Documents/c++ project/googletest/googletest/xcode/build/Debug/";
+				SYMROOT = "/Users/Karthik/Documents/c++\\ project/googletest/googletest/xcode/build/Debug/";
 			};
 			name = Release;
 		};
