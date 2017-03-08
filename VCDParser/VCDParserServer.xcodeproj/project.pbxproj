@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		2502B72F1E67E0560039DBEB /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2502B72E1E67E0560039DBEB /* libboost_filesystem.dylib */; };
 		2502B7321E67E12D0039DBEB /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2502B7301E67E12D0039DBEB /* Parser.cpp */; };
+		252193221E6FEC3700460F66 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 252193201E6FEC3700460F66 /* libgtest_main.a */; };
+		252193231E6FEC3700460F66 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 252193211E6FEC3700460F66 /* libgtest.a */; };
+		252193261E6FF07600460F66 /* gtest_main-static.build in Frameworks */ = {isa = PBXBuildFile; fileRef = 252193251E6FF06200460F66 /* gtest_main-static.build */; };
+		252574B01E6FE6A700D7B821 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 252574AF1E6FE6A700D7B821 /* main.cpp */; };
 		252FA8B41E623EE0000BB9E9 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 252FA8B31E623EE0000BB9E9 /* libboost_system.dylib */; };
 		254F43F31E69493F0016A00D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254F43F21E69493F0016A00D /* main.cpp */; };
-		254F43F91E69497D0016A00D /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F43DB1E6947CC0016A00D /* gtest.framework */; };
-		254F43FC1E6949B30016A00D /* gtest-static.build in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F43FB1E6949B30016A00D /* gtest-static.build */; };
 		258B380B1E6C1C2200C8E786 /* ConnectionSetUp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B38091E6C1C2200C8E786 /* ConnectionSetUp.cpp */; };
 		258B380C1E6C1C2200C8E786 /* ConnectionSetUp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B38091E6C1C2200C8E786 /* ConnectionSetUp.cpp */; };
 		258B381C1E6C25D800C8E786 /* ReceivedDataHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B381A1E6C25D800C8E786 /* ReceivedDataHandler.cpp */; };
 		258B381D1E6C25D800C8E786 /* ReceivedDataHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B381A1E6C25D800C8E786 /* ReceivedDataHandler.cpp */; };
 		2596F2361E6684AB0009332C /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2596F2321E6684AB0009332C /* Database.cpp */; };
-		2596F2371E6684AB0009332C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2596F2341E6684AB0009332C /* main.cpp */; };
 		2596F23B1E668B0D0009332C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2596F23A1E668B0D0009332C /* libsqlite3.dylib */; };
 		2596F23D1E668B1F0009332C /* libtclsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2596F23C1E668B1F0009332C /* libtclsqlite3.dylib */; };
 		2596F2421E668F710009332C /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 2596F23F1E668F710009332C /* sqlite3.c */; };
@@ -29,70 +30,62 @@
 		25D799A41E6CA6A2005D286C /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2502B72E1E67E0560039DBEB /* libboost_filesystem.dylib */; };
 		25D799A51E6CA6A4005D286C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2596F23A1E668B0D0009332C /* libsqlite3.dylib */; };
 		25D799A61E6CA6A6005D286C /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 252FA8B31E623EE0000BB9E9 /* libboost_system.dylib */; };
-		25D799A81E6CB7EB005D286C /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F43DF1E6947CC0016A00D /* libgtest_main.a */; };
 		25D799AA1E6CF6A3005D286C /* ParserTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25D799A91E6CF6A3005D286C /* ParserTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		254F43DA1E6947CC0016A00D /* PBXContainerItemProxy */ = {
+		252193341E6FF33700460F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
+			containerPortal = 252193281E6FF33700460F66 /* gtest.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
 			remoteInfo = "gtest-framework";
 		};
-		254F43DC1E6947CC0016A00D /* PBXContainerItemProxy */ = {
+		252193361E6FF33700460F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
+			containerPortal = 252193281E6FF33700460F66 /* gtest.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C848FA101A209C0083642A;
 			remoteInfo = "gtest-static";
 		};
-		254F43DE1E6947CC0016A00D /* PBXContainerItemProxy */ = {
+		252193381E6FF33700460F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
+			containerPortal = 252193281E6FF33700460F66 /* gtest.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C8490B101A217E0083642A;
 			remoteInfo = "gtest_main-static";
 		};
-		254F43E01E6947CC0016A00D /* PBXContainerItemProxy */ = {
+		2521933A1E6FF33700460F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
+			containerPortal = 252193281E6FF33700460F66 /* gtest.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40899F430FFA7184000B29AE;
 			remoteInfo = "gtest_unittest-framework";
 		};
-		254F43E21E6947CC0016A00D /* PBXContainerItemProxy */ = {
+		2521933C1E6FF33700460F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
+			containerPortal = 252193281E6FF33700460F66 /* gtest.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C84987101A36850083642A;
 			remoteInfo = "gtest_unittest-static";
 		};
-		254F43E41E6947CC0016A00D /* PBXContainerItemProxy */ = {
+		2521933E1E6FF33700460F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
+			containerPortal = 252193281E6FF33700460F66 /* gtest.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
 			remoteInfo = "sample1_unittest-framework";
 		};
-		254F43E61E6947CC0016A00D /* PBXContainerItemProxy */ = {
+		252193401E6FF33700460F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
+			containerPortal = 252193281E6FF33700460F66 /* gtest.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C84997101A36A60083642A;
 			remoteInfo = "sample1_unittest-static";
 		};
-		254F43E81E6947CC0016A00D /* PBXContainerItemProxy */ = {
+		2581D28F1E6FFA1800EE3469 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 254F43971E6937750016A00D;
-			remoteInfo = UnitTests;
-		};
-		254F43F71E6949660016A00D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
+			containerPortal = 252193281E6FF33700460F66 /* gtest.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 40C848F9101A209C0083642A;
 			remoteInfo = "gtest-static";
@@ -131,19 +124,21 @@
 		2502B72E1E67E0560039DBEB /* libboost_filesystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_filesystem.dylib; path = /usr/local/lib/libboost_filesystem.dylib; sourceTree = "<absolute>"; };
 		2502B7301E67E12D0039DBEB /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
 		2502B7311E67E12D0039DBEB /* Parser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Parser.hpp; sourceTree = "<group>"; };
+		252193201E6FEC3700460F66 /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = ../googletest/googletest/xcode/build/Debug/libgtest_main.a; sourceTree = "<group>"; };
+		252193211E6FEC3700460F66 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../googletest/googletest/xcode/build/Debug/libgtest.a; sourceTree = "<group>"; };
+		252193251E6FF06200460F66 /* gtest_main-static.build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "gtest_main-static.build"; path = "../googletest/googletest/xcode/build/gtest.build/Debug/gtest_main-static.build"; sourceTree = "<group>"; };
+		252193281E6FF33700460F66 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
+		252574AF1E6FE6A700D7B821 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		252FA8A91E62082F000BB9E9 /* VCDParserServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VCDParserServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		252FA8B31E623EE0000BB9E9 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../usr/local/Cellar/boost/1.60.0_1/lib/libboost_system.dylib; sourceTree = "<group>"; };
 		2534488F1E66B13D006B482D /* Database.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Database.hpp; sourceTree = "<group>"; };
-		254F43CD1E6947CC0016A00D /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
 		254F43F01E69493F0016A00D /* VCDParserServerUnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VCDParserServerUnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
 		254F43F21E69493F0016A00D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		254F43FB1E6949B30016A00D /* gtest-static.build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "gtest-static.build"; path = "../googletest/googletest/xcode/build/gtest.build/Release/gtest-static.build"; sourceTree = "<group>"; };
 		258B38091E6C1C2200C8E786 /* ConnectionSetUp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionSetUp.cpp; sourceTree = "<group>"; };
 		258B380A1E6C1C2200C8E786 /* ConnectionSetUp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionSetUp.hpp; sourceTree = "<group>"; };
 		258B381A1E6C25D800C8E786 /* ReceivedDataHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReceivedDataHandler.cpp; sourceTree = "<group>"; };
 		258B381B1E6C25D800C8E786 /* ReceivedDataHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReceivedDataHandler.hpp; sourceTree = "<group>"; };
 		2596F2321E6684AB0009332C /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Database.cpp; sourceTree = "<group>"; };
-		2596F2341E6684AB0009332C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/Karthik/Documents/c++ project/VCDParser/VCDParser/main.cpp"; sourceTree = "<absolute>"; };
 		2596F23A1E668B0D0009332C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
 		2596F23C1E668B1F0009332C /* libtclsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtclsqlite3.dylib; path = /System/Library/Tcl/sqlite3/libtclsqlite3.dylib; sourceTree = "<absolute>"; };
 		2596F23F1E668F710009332C /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
@@ -168,24 +163,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25D799A81E6CB7EB005D286C /* libgtest_main.a in Frameworks */,
-				254F43FC1E6949B30016A00D /* gtest-static.build in Frameworks */,
-				254F43F91E69497D0016A00D /* gtest.framework in Frameworks */,
+				252193221E6FEC3700460F66 /* libgtest_main.a in Frameworks */,
 				25D799A41E6CA6A2005D286C /* libboost_filesystem.dylib in Frameworks */,
 				25D799A51E6CA6A4005D286C /* libsqlite3.dylib in Frameworks */,
 				25D799A61E6CA6A6005D286C /* libboost_system.dylib in Frameworks */,
+				252193231E6FEC3700460F66 /* libgtest.a in Frameworks */,
 				25D799A31E6CA69D005D286C /* libtclsqlite3.dylib in Frameworks */,
+				252193261E6FF07600460F66 /* gtest_main-static.build in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252193291E6FF33700460F66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				252193351E6FF33700460F66 /* gtest.framework */,
+				252193371E6FF33700460F66 /* libgtest.a */,
+				252193391E6FF33700460F66 /* libgtest_main.a */,
+				2521933B1E6FF33700460F66 /* gtest_unittest-framework */,
+				2521933D1E6FF33700460F66 /* gtest_unittest */,
+				2521933F1E6FF33700460F66 /* sample1_unittest-framework */,
+				252193411E6FF33700460F66 /* sample1_unittest-static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		252FA8A01E62082E000BB9E9 = {
 			isa = PBXGroup;
 			children = (
-				254F43CD1E6947CC0016A00D /* gtest.xcodeproj */,
+				252193281E6FF33700460F66 /* gtest.xcodeproj */,
 				2596F23C1E668B1F0009332C /* libtclsqlite3.dylib */,
+				252193201E6FEC3700460F66 /* libgtest_main.a */,
+				252193211E6FEC3700460F66 /* libgtest.a */,
 				2502B72E1E67E0560039DBEB /* libboost_filesystem.dylib */,
 				2596F23A1E668B0D0009332C /* libsqlite3.dylib */,
 				252FA8B31E623EE0000BB9E9 /* libboost_system.dylib */,
@@ -209,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				2596F23F1E668F710009332C /* sqlite3.c */,
-				2596F2341E6684AB0009332C /* main.cpp */,
 				2596F2401E668F710009332C /* sqlite3.h */,
 				2596F2321E6684AB0009332C /* Database.cpp */,
 				2534488F1E66B13D006B482D /* Database.hpp */,
@@ -219,24 +229,10 @@
 				258B380A1E6C1C2200C8E786 /* ConnectionSetUp.hpp */,
 				258B381A1E6C25D800C8E786 /* ReceivedDataHandler.cpp */,
 				258B381B1E6C25D800C8E786 /* ReceivedDataHandler.hpp */,
+				252574AF1E6FE6A700D7B821 /* main.cpp */,
 			);
 			name = VCDParserServer;
 			path = VCDParser;
-			sourceTree = "<group>";
-		};
-		254F43CE1E6947CC0016A00D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				254F43DB1E6947CC0016A00D /* gtest.framework */,
-				254F43DD1E6947CC0016A00D /* libgtest.a */,
-				254F43DF1E6947CC0016A00D /* libgtest_main.a */,
-				254F43E11E6947CC0016A00D /* gtest_unittest-framework */,
-				254F43E31E6947CC0016A00D /* gtest_unittest */,
-				254F43E51E6947CC0016A00D /* sample1_unittest-framework */,
-				254F43E71E6947CC0016A00D /* sample1_unittest-static */,
-				254F43E91E6947CC0016A00D /* UnitTests */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		254F43F11E69493F0016A00D /* VCDParserServerUnitTests */ = {
@@ -252,7 +248,7 @@
 		254F43FA1E6949B30016A00D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				254F43FB1E6949B30016A00D /* gtest-static.build */,
+				252193251E6FF06200460F66 /* gtest_main-static.build */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -288,7 +284,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				254F43F81E6949660016A00D /* PBXTargetDependency */,
+				2581D2901E6FFA1800EE3469 /* PBXTargetDependency */,
 				25D799A21E6CA51F005D286C /* PBXTargetDependency */,
 			);
 			name = VCDParserServerUnitTests;
@@ -327,8 +323,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 254F43CE1E6947CC0016A00D /* Products */;
-					ProjectRef = 254F43CD1E6947CC0016A00D /* gtest.xcodeproj */;
+					ProductGroup = 252193291E6FF33700460F66 /* Products */;
+					ProjectRef = 252193281E6FF33700460F66 /* gtest.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -340,60 +336,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		254F43DB1E6947CC0016A00D /* gtest.framework */ = {
+		252193351E6FF33700460F66 /* gtest.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = gtest.framework;
-			remoteRef = 254F43DA1E6947CC0016A00D /* PBXContainerItemProxy */;
+			remoteRef = 252193341E6FF33700460F66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		254F43DD1E6947CC0016A00D /* libgtest.a */ = {
+		252193371E6FF33700460F66 /* libgtest.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libgtest.a;
-			remoteRef = 254F43DC1E6947CC0016A00D /* PBXContainerItemProxy */;
+			remoteRef = 252193361E6FF33700460F66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		254F43DF1E6947CC0016A00D /* libgtest_main.a */ = {
+		252193391E6FF33700460F66 /* libgtest_main.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libgtest_main.a;
-			remoteRef = 254F43DE1E6947CC0016A00D /* PBXContainerItemProxy */;
+			remoteRef = 252193381E6FF33700460F66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		254F43E11E6947CC0016A00D /* gtest_unittest-framework */ = {
+		2521933B1E6FF33700460F66 /* gtest_unittest-framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "gtest_unittest-framework";
-			remoteRef = 254F43E01E6947CC0016A00D /* PBXContainerItemProxy */;
+			remoteRef = 2521933A1E6FF33700460F66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		254F43E31E6947CC0016A00D /* gtest_unittest */ = {
+		2521933D1E6FF33700460F66 /* gtest_unittest */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = gtest_unittest;
-			remoteRef = 254F43E21E6947CC0016A00D /* PBXContainerItemProxy */;
+			remoteRef = 2521933C1E6FF33700460F66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		254F43E51E6947CC0016A00D /* sample1_unittest-framework */ = {
+		2521933F1E6FF33700460F66 /* sample1_unittest-framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "sample1_unittest-framework";
-			remoteRef = 254F43E41E6947CC0016A00D /* PBXContainerItemProxy */;
+			remoteRef = 2521933E1E6FF33700460F66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		254F43E71E6947CC0016A00D /* sample1_unittest-static */ = {
+		252193411E6FF33700460F66 /* sample1_unittest-static */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "sample1_unittest-static";
-			remoteRef = 254F43E61E6947CC0016A00D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		254F43E91E6947CC0016A00D /* UnitTests */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = UnitTests;
-			remoteRef = 254F43E81E6947CC0016A00D /* PBXContainerItemProxy */;
+			remoteRef = 252193401E6FF33700460F66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -405,7 +394,7 @@
 			files = (
 				2502B7321E67E12D0039DBEB /* Parser.cpp in Sources */,
 				258B380B1E6C1C2200C8E786 /* ConnectionSetUp.cpp in Sources */,
-				2596F2371E6684AB0009332C /* main.cpp in Sources */,
+				252574B01E6FE6A700D7B821 /* main.cpp in Sources */,
 				2596F2361E6684AB0009332C /* Database.cpp in Sources */,
 				2596F2421E668F710009332C /* sqlite3.c in Sources */,
 				258B381C1E6C25D800C8E786 /* ReceivedDataHandler.cpp in Sources */,
@@ -429,10 +418,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		254F43F81E6949660016A00D /* PBXTargetDependency */ = {
+		2581D2901E6FFA1800EE3469 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "gtest-static";
-			targetProxy = 254F43F71E6949660016A00D /* PBXContainerItemProxy */;
+			targetProxy = 2581D28F1E6FFA1800EE3469 /* PBXContainerItemProxy */;
 		};
 		25D799A21E6CA51F005D286C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -445,7 +434,7 @@
 		252FA8AE1E62082F000BB9E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -492,7 +481,7 @@
 		252FA8AF1E62082F000BB9E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -578,9 +567,9 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				"HEADER_SEARCH_PATHS[arch=*]" = (
-					"/Users/Karthik/Documents/c++\\ project/googletest/googletest/include",
+					/Users/Karthik/Documents/parser_project/googletest/googletest/include,
 					/usr/local/Cellar/boost/1.60.0_1/include,
-					"/Users/Karthik/Documents/c++\\ project/googletest/googlemock/include",
+					/Users/Karthik/Documents/parser_project/googletest/googlemock/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,7 +582,7 @@
 					/usr/local/Cellar/boost/1.60.0_1/lib,
 					"$(SYSTEM_LIBRARY_DIR)/Tcl/sqlite3",
 					/usr/lib/sqlite3,
-					"/Users/Karthik/Documents/c++\\ project/googletest/googletest/xcode/build/Release",
+					/Users/Karthik/Documents/parser_project/googletest/googletest/xcode/build/Debug,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -606,9 +595,9 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				"HEADER_SEARCH_PATHS[arch=*]" = (
-					"/Users/Karthik/Documents/c++\\ project/googletest/googletest/include",
+					/Users/Karthik/Documents/parser_project/googletest/googletest/include,
 					/usr/local/Cellar/boost/1.60.0_1/include,
-					"/Users/Karthik/Documents/c++\\ project/googletest/googlemock/include",
+					/Users/Karthik/Documents/parser_project/googletest/googlemock/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -619,7 +608,7 @@
 					/usr/local/Cellar/boost/1.60.0_1/lib,
 					"$(SYSTEM_LIBRARY_DIR)/Tcl/sqlite3",
 					/usr/lib/sqlite3,
-					"/Users/Karthik/Documents/c++\\ project/googletest/googletest/xcode/build/Release",
+					/Users/Karthik/Documents/parser_project/googletest/googletest/xcode/build/Release,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D07F2BC0486CC7A007CD1D0"
-               BuildableName = "gtest.framework"
-               BlueprintName = "gtest-framework"
-               ReferencedContainer = "container:gtest.xcodeproj">
+               BlueprintIdentifier = "255327F51E6B2CEA0047641B"
+               BuildableName = "VCDParserClientUnitTests"
+               BlueprintName = "VCDParserClientUnitTests"
+               ReferencedContainer = "container:VCDParserClient.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "252FA8BD1E624FCA000BB9E9"
+               BuildableName = "VCDParserClient"
+               BlueprintName = "VCDParserClient"
+               ReferencedContainer = "container:VCDParserClient.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,9 +40,19 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "255327F51E6B2CEA0047641B"
+            BuildableName = "VCDParserClientUnitTests"
+            BlueprintName = "VCDParserClientUnitTests"
+            ReferencedContainer = "container:VCDParserClient.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +66,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D07F2BC0486CC7A007CD1D0"
-            BuildableName = "gtest.framework"
-            BlueprintName = "gtest-framework"
-            ReferencedContainer = "container:gtest.xcodeproj">
+            BlueprintIdentifier = "255327F51E6B2CEA0047641B"
+            BuildableName = "VCDParserClientUnitTests"
+            BlueprintName = "VCDParserClientUnitTests"
+            ReferencedContainer = "container:VCDParserClient.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +85,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D07F2BC0486CC7A007CD1D0"
-            BuildableName = "gtest.framework"
-            BlueprintName = "gtest-framework"
-            ReferencedContainer = "container:gtest.xcodeproj">
+            BlueprintIdentifier = "255327F51E6B2CEA0047641B"
+            BuildableName = "VCDParserClientUnitTests"
+            BlueprintName = "VCDParserClientUnitTests"
+            ReferencedContainer = "container:VCDParserClient.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

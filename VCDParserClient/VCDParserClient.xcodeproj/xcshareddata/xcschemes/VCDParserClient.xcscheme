@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "254F43961E6937750016A00D"
-               BuildableName = "UnitTests"
-               BlueprintName = "UnitTests"
-               ReferencedContainer = "container:gtest.xcodeproj">
+               BlueprintIdentifier = "252FA8BD1E624FCA000BB9E9"
+               BuildableName = "VCDParserClient"
+               BlueprintName = "VCDParserClient"
+               ReferencedContainer = "container:VCDParserClient.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "254F43961E6937750016A00D"
-            BuildableName = "UnitTests"
-            BlueprintName = "UnitTests"
-            ReferencedContainer = "container:gtest.xcodeproj">
+            BlueprintIdentifier = "252FA8BD1E624FCA000BB9E9"
+            BuildableName = "VCDParserClient"
+            BlueprintName = "VCDParserClient"
+            ReferencedContainer = "container:VCDParserClient.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -46,7 +46,8 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
+      useCustomWorkingDirectory = "YES"
+      customWorkingDirectory = "/Users/Karthik/Documents/c++ project/VCDParserClient/VCDParserClient"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -55,10 +56,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "254F43961E6937750016A00D"
-            BuildableName = "UnitTests"
-            BlueprintName = "UnitTests"
-            ReferencedContainer = "container:gtest.xcodeproj">
+            BlueprintIdentifier = "252FA8BD1E624FCA000BB9E9"
+            BuildableName = "VCDParserClient"
+            BlueprintName = "VCDParserClient"
+            ReferencedContainer = "container:VCDParserClient.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "254F43961E6937750016A00D"
-            BuildableName = "UnitTests"
-            BlueprintName = "UnitTests"
-            ReferencedContainer = "container:gtest.xcodeproj">
+            BlueprintIdentifier = "252FA8BD1E624FCA000BB9E9"
+            BuildableName = "VCDParserClient"
+            BlueprintName = "VCDParserClient"
+            ReferencedContainer = "container:VCDParserClient.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
