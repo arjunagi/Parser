@@ -522,7 +522,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0820;
 				TargetAttributes = {
 					254F43961E6937750016A00D = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -785,6 +785,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -827,6 +828,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -933,6 +935,7 @@
 			baseConfigurationReference = 40899FB30FFA7567000B29AE /* StaticLibraryTarget.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Karthik/Documents/c++ project/googletest/googletest/xcode/build/Debug/";
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -950,6 +953,7 @@
 			baseConfigurationReference = 40899FB30FFA7567000B29AE /* StaticLibraryTarget.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Karthik/Documents/c++ project/googletest/googletest/xcode/build/Release";
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -967,6 +971,7 @@
 			baseConfigurationReference = 40899FB30FFA7567000B29AE /* StaticLibraryTarget.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
 					../,
@@ -982,6 +987,7 @@
 			baseConfigurationReference = 40899FB30FFA7567000B29AE /* StaticLibraryTarget.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
 					../,
@@ -1037,6 +1043,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Karthik/Documents/c++ project/googletest/googletest/xcode/build/Debug/";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1048,6 +1055,7 @@
 				INFOPLIST_PREFIX_HEADER = "$(PROJECT_TEMP_DIR)/Version.h";
 				INFOPLIST_PREPROCESS = YES;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.${PRODUCT_NAME}";
 				PRODUCT_NAME = gtest;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1061,6 +1069,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/Karthik/Documents/c++ project/googletest/googletest/xcode/build/Release";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1071,6 +1080,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_PREFIX_HEADER = "$(PROJECT_TEMP_DIR)/Version.h";
 				INFOPLIST_PREPROCESS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.${PRODUCT_NAME}";
 				PRODUCT_NAME = gtest;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1081,7 +1091,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF10E30E07400294801 /* DebugProject.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_VERSION = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SYMROOT = "/Users/Karthik/Documents/c++ project/googletest/googletest/xcode/build/Debug/";
 			};
 			name = Debug;
 		};
@@ -1089,7 +1104,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF40E30E07400294801 /* ReleaseProject.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				GCC_VERSION = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SYMROOT = "/Users/Karthik/Documents/c++ project/googletest/googletest/xcode/build/Debug/";
 			};
 			name = Release;
 		};
@@ -1103,7 +1121,7 @@
 				254F439C1E6937750016A00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3B238FA30E828BB600846E11 /* Build configuration list for PBXAggregateTarget "Check" */ = {
 			isa = XCConfigurationList;
@@ -1112,7 +1130,7 @@
 				3B238F610E828B5400846E11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		40899F4A0FFA71BC000B29AE /* Build configuration list for PBXNativeTarget "gtest_unittest-framework" */ = {
 			isa = XCConfigurationList;
@@ -1121,7 +1139,7 @@
 				40899F460FFA7185000B29AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4089A0240FFACF01000B29AE /* Build configuration list for PBXNativeTarget "sample1_unittest-framework" */ = {
 			isa = XCConfigurationList;
@@ -1130,7 +1148,7 @@
 				4089A0160FFACEFD000B29AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		40C44AE40E379905008FCC51 /* Build configuration list for PBXAggregateTarget "Version Info" */ = {
 			isa = XCConfigurationList;
@@ -1139,7 +1157,7 @@
 				40C44AE00E3798F4008FCC51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		40C84902101A212E0083642A /* Build configuration list for PBXNativeTarget "gtest-static" */ = {
 			isa = XCConfigurationList;
@@ -1148,7 +1166,7 @@
 				40C848FC101A209D0083642A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		40C84912101A21D20083642A /* Build configuration list for PBXNativeTarget "gtest_main-static" */ = {
 			isa = XCConfigurationList;
@@ -1157,7 +1175,7 @@
 				40C8490F101A217F0083642A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		40C84984101A36850083642A /* Build configuration list for PBXNativeTarget "gtest_unittest-static" */ = {
 			isa = XCConfigurationList;
@@ -1166,7 +1184,7 @@
 				40C84986101A36850083642A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		40C84994101A36A60083642A /* Build configuration list for PBXNativeTarget "sample1_unittest-static" */ = {
 			isa = XCConfigurationList;
@@ -1175,7 +1193,7 @@
 				40C84996101A36A60083642A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4FADC24208B4156D00ABE55E /* Build configuration list for PBXNativeTarget "gtest-framework" */ = {
 			isa = XCConfigurationList;
@@ -1184,7 +1202,7 @@
 				4FADC24408B4156D00ABE55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "gtest" */ = {
 			isa = XCConfigurationList;
@@ -1193,7 +1211,7 @@
 				4FADC24808B4156D00ABE55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
