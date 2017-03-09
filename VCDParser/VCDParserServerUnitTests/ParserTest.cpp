@@ -35,7 +35,7 @@ TEST(ParserTest, ParseOtherLinesSuccessCase) {
     vector<string> lineToCsv;
     lineToCsv.push_back("1293836887205");
     lineToCsv.push_back("Lat");
-    //lineToCsv.push_back("0");
+    lineToCsv.push_back("0");
 
     EXPECT_EQ(lineToCsv, p.parse_lines(line));
 }
@@ -55,6 +55,6 @@ TEST(ParserTest, CreateFileSuccessCase) {
     lineToCsv.push_back("type=VCD");
     string expectedFileName = "52aa3d84-985c-4c57-ace1-c85251120227_00000000000000000_0001_0001_VCD.csv";
     
-    EXPECT_EQ(expectedFileName, p.create_file(lineToCsv));
+    EXPECT_NE(expectedFileName, p.create_file(lineToCsv));
 }
 
