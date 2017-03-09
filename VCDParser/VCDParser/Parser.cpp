@@ -69,6 +69,6 @@ string Parser::create_file(vector<string> firstLineCsv) {
         }
     }
     new_file_name.append(".csv");  //Example new file name: 52aa3d84-985c-4c57-ace1-c85251120227_00000000000000000_0001_0001_VCD.csv
-    return new_file_name;
+    return new_file_name
     
 }// end of create_file
