@@ -18,7 +18,7 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    try{
+    try {
         ConnectionSetUp connection;
         connection.setUpUnixSocket();
         FileSender fs;
