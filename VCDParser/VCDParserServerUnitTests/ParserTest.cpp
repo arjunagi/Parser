@@ -35,7 +35,7 @@ TEST(ParserTest, ParseOtherLinesSuccessCase) {
     vector<string> lineToCsv;
     lineToCsv.push_back("1293836887205");
     lineToCsv.push_back("Lat");
-    //lineToCsv.push_back("0");
+    lineToCsv.push_back("0");
 
     EXPECT_EQ(lineToCsv, p.parse_lines(line));
 }
