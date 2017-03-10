@@ -56,7 +56,7 @@ TEST(ParserTest, firstLineShouldBeUsedTOGetCorrectFileName) {
     lineToCsv.push_back("type=VCD");
     string expectedFileName = "52aa3d84-985c-4c57-ace1-c85251120227_00000000000000000_0001_0001_VCD.csv";
     
-    EXPECT_NE(expectedFileName, p.createFile(lineToCsv));
+    EXPECT_EQ(expectedFileName, p.createFile(lineToCsv));
 }
 
 /*
