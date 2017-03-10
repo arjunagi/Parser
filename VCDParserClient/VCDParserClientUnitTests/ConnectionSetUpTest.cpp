@@ -13,27 +13,6 @@
 
 using namespace boost::asio;
 
-//struct mockSocket {
-//    
-//    boost::asio::io_service io_service;
-//    local::stream_protocol::endpoint ep;
-//    local::stream_protocol::socket socket;
-//    local::stream_protocol::acceptor acceptor;
-//    
-//    mockSocket(): socket(io_service), acceptor(io_service, ep) {
-//        ::unlink("/tmp/sock");
-//        this->ep = "/tmp/sock";
-//        acceptor.accept(socket);
-//    }
-//    
-//    ~mockSocket() {
-////        ::unlink("/tmp/sock");
-////        socket.close();
-////        acceptor.close();
-////        io_service.stop();
-//    }
-//};
-
 /*
  * Test to verify that an error is thrown if connection to endpoint fails
  */
