@@ -36,19 +36,20 @@ int main(int argc, const char * argv[]) {
             
             //Continue if data available to read in socket
             if(connect.getSocket().available() > 0) {
+                
                 boost::asio::streambuf data;
                 boost::system::error_code error;
                 
                 // Read the all the available data from the socket.
                 while (boost::asio::read(connect.getSocket(), data, boost::asio::transfer_at_least(connect.getSocket().available()), error)) {
-                    cout<<"Received: " << data.size() <<"\n";
-                    if(!error || error == boost::asio::error::eof)
-                        dataHandler.storeDataToFileAndDB(data);
-                    else
+                    
+                    cout<<"Received: " << data.size() <<" bytes\n";
+                    if(error && error != boost::asio::error::eof)
                         throw boost::system::system_error(error);
-                }// end of while
+                    dataHandler.storeDataToFileAndDB(data);
+                }
                 
-            }//end of if
+            }
             
         }//end of while(true)
         

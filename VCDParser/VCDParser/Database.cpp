@@ -16,11 +16,11 @@ using namespace std;
  * Open a database with the given name. If open is succesful, create a table, 
  * else throw sqlite3_errmsg
  */
-Database::Database(string db_name) {
-    int rc = sqlite3_open_v2(db_name.c_str(), &db, SQLITE_OPEN_CREATE | SQLITE_OPEN_READWRITE, NULL);
+Database::Database(string dbName) {
+    int rc = sqlite3_open_v2(dbName.c_str(), &db, SQLITE_OPEN_CREATE | SQLITE_OPEN_READWRITE, NULL);
     if(rc) throw sqlite3_errmsg(db);
     else  {
-        cout<<"Database " << db_name <<" created!\n";
+        cout<<"Database " << dbName <<" created!\n";
         createTable();
     }
 }

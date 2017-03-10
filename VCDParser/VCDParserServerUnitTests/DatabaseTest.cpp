@@ -37,7 +37,7 @@ public:
  * Test the constructor. 
  * The return code of opening the db successfully should be 0.
  */
-TEST_F(DatabaseTest, ConstructorTest) {
+TEST_F(DatabaseTest, successfulDbCreationShouldReturnZero) {
     sqlite3 *tempDb = &db.getDb();
     int rc = sqlite3_open(dbName.c_str(), &tempDb);
     EXPECT_EQ(rc, 0);
@@ -46,7 +46,7 @@ TEST_F(DatabaseTest, ConstructorTest) {
 /* Test creation of table.
  * Creates a table and checks its existence by trying to read data from it.
  */
-TEST_F(DatabaseTest, CreateTable) {
+TEST_F(DatabaseTest, successfulTableCreationShouldReturn100) {
     string query = "SELECT name FROM sqlite_master WHERE type='table' AND name='vcd';";
     sqlite3_stmt *stmt;
     sqlite3_prepare(&db.getDb(), query.c_str(), query.size(), &stmt, NULL);
@@ -57,9 +57,20 @@ TEST_F(DatabaseTest, CreateTable) {
  * Test insertion of a row into the database.
  * Successful insertion will return SQLITE_DONE
  */
-TEST_F(DatabaseTest, Insert) {
+TEST_F(DatabaseTest, correctInsertionShouldReturnDone) {
     string insertQuery = "INSERT INTO vcd (timestamp, data_point,value) VALUES ('1234', 'abc', '1.2.3');";
     sqlite3_stmt *insertStmt;
     sqlite3_prepare(&db.getDb(), insertQuery.c_str(), insertQuery.size(), &insertStmt, NULL);
     EXPECT_EQ(sqlite3_step(insertStmt), SQLITE_DONE);
+}
+
+/*
+ * Test insertion of a row with 4 columns into the database which accepts only 3 columns.
+ * Unsuccessful insertion will return SQLITE_MISUSE
+ */
+TEST_F(DatabaseTest, incorrectInsertionShouldReturnError) {
+    string insertQuery = "INSERT INTO vcd (timestamp, data_point,value) VALUES ('1234', 'abc', '1.2.3', 'xyz');";
+    sqlite3_stmt *insertStmt;
+    sqlite3_prepare(&db.getDb(), insertQuery.c_str(), insertQuery.size(), &insertStmt, NULL);
+    EXPECT_EQ(sqlite3_step(insertStmt), SQLITE_MISUSE);
 }

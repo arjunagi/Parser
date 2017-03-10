@@ -22,19 +22,19 @@ using namespace std;
  * @param line: The line to be parsed
  * @return: vector of values extracted form the csv line
  */
-vector<string> Parser::parse_lines(std::string line) {
+vector<string> Parser::parseLines(std::string line) {
     
     stringstream ss(line);
-    vector<string> csv_values; //vector to store the csv values
+    vector<string> csvValues; //vector to store the csv values
     
     //Divide the line by ',' and store the sub-strings into a vector csv_values
     while(ss.good())
     {
         string substr;
         getline( ss, substr, ',' );
-        csv_values.push_back( substr );
+        csvValues.push_back( substr );
     }
-    return csv_values;
+    return csvValues;
     
 }//end of parse_lines()
 
@@ -46,17 +46,17 @@ vector<string> Parser::parse_lines(std::string line) {
  * @param firstLineCsv: First line of the file
  * @return The new file name
  */
-string Parser::create_file(vector<string> firstLineCsv) {
+string Parser::createFile(vector<string> firstLineCsv) {
 
     if(firstLineCsv.size() == 0) return "";
     
-    string new_file_name;
+    string newFileName;
     
     //Remove the "# " a the beginning of the line
     boost::erase_first(firstLineCsv[0], "# ");
     
     //Start creating the new file name beginning with the UUID
-    new_file_name.append(firstLineCsv[0]);
+    newFileName.append(firstLineCsv[0]);
     
     //Iterate over rest of the vector and separate the key=value pairs. Append only the value part to the new file name
     for (std::vector<string>::const_iterator i = firstLineCsv.begin()+1; i != firstLineCsv.end(); ++i) {
@@ -65,10 +65,10 @@ string Parser::create_file(vector<string> firstLineCsv) {
         size_t positionOfEquals = query.find("=");
         if(positionOfEquals != string::npos) {
             value = query.substr(positionOfEquals + 1);
-            new_file_name.append("_" + value);
+            newFileName.append("_" + value);
         }
     }
-    new_file_name.append(".csv");  //Example new file name: 52aa3d84-985c-4c57-ace1-c85251120227_00000000000000000_0001_0001_VCD.csv
-    return new_file_name;
+    newFileName.append(".csv");  //Example new file name: 52aa3d84-985c-4c57-ace1-c85251120227_00000000000000000_0001_0001_VCD.csv
+    return newFileName;
     
 }// end of create_file

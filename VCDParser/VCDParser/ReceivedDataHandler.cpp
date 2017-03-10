@@ -30,7 +30,7 @@ void ReceivedDataHandler::storeDataToFileAndDB(boost::asio::streambuf &receivedS
     
     std::istream is(&receivedStreamData);
     std::string line;
-    string parsed_file_name;
+    string parsedFileName;
     std::fstream fs;
     
     // Convert the streambuf data to string format line by line
@@ -38,15 +38,15 @@ void ReceivedDataHandler::storeDataToFileAndDB(boost::asio::streambuf &receivedS
         if(line.find("#") != string::npos) {
             // If the data contains "#", then it is the first line of the file. Use it to create a new file.
             // This line is not stored in the db.
-            vector<string> first_line_csv= this->parser.parse_lines(line);
-            parsed_file_name = parsed_logs_dir + "/" + this->parser.create_file(first_line_csv);
-            fs.open(parsed_file_name, std::fstream::out);
+            vector<string> first_line_csv= this->parser.parseLines(line);
+            parsedFileName = parsed_logs_dir + "/" + this->parser.createFile(first_line_csv);
+            fs.open(parsedFileName, std::fstream::out);
         }
         else {
             // For all other lines, parse the data and store it in the new file and in the db.
             if(fs.is_open()) fs << line << "\n";
-            vector<string> next_line_csv = parser.parse_lines(line);
-            if(next_line_csv.size() > 3) cerr<<"\nMore than 3 elements in " << parsed_file_name << "\n" << line << "\n";
+            vector<string> next_line_csv = parser.parseLines(line);
+            if(next_line_csv.size() > 3) cerr<<"\nMore than 3 elements in " << parsedFileName << "\n" << line << "\n";
             else {
                 db.insert("INSERT INTO vcd (timestamp, data_point, value) VALUES ("
                           + quotesql(next_line_csv[0]) + ","

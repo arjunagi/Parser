@@ -11,9 +11,10 @@
 #include "Parser.hpp"
 
 /*
- * Tests if the first line of a file is parsed and stored in a vector<string>
+ * Tests if the first line of a file is parsed and 
+ * returns the expected CSV.
  */
-TEST(ParserTest, ParseFirstLineSuccessCase) {
+TEST(ParserTest, firstLineParsingShouldReturnExpectedCsv) {
     Parser p;
     string line = "# 52aa3d84-985c-4c57-ace1-c85251120227,pv=00000000000000000,ssn=0001,tsn=0001,type=VCD";
     vector<string> lineToCsv;
@@ -23,13 +24,13 @@ TEST(ParserTest, ParseFirstLineSuccessCase) {
     lineToCsv.push_back("tsn=0001");
     lineToCsv.push_back("type=VCD");
     
-    EXPECT_EQ(lineToCsv, p.parse_lines(line));
+    EXPECT_EQ(lineToCsv, p.parseLines(line));
 }
 
 /*
  * Tests if the other lines of a file is parsed and stored in a vector<string>
  */
-TEST(ParserTest, ParseOtherLinesSuccessCase) {
+TEST(ParserTest, otherLineParsingShouldReturnCorrectCsv) {
     Parser p;
     string line = "1293836887205,Lat,0";
     vector<string> lineToCsv;
@@ -37,7 +38,7 @@ TEST(ParserTest, ParseOtherLinesSuccessCase) {
     lineToCsv.push_back("Lat");
     lineToCsv.push_back("0");
 
-    EXPECT_EQ(lineToCsv, p.parse_lines(line));
+    EXPECT_EQ(lineToCsv, p.parseLines(line));
 }
 
 /*
@@ -45,7 +46,7 @@ TEST(ParserTest, ParseOtherLinesSuccessCase) {
  * Expected name format: uuid_vin_ssn_tsn_VCD.csv
  * Example: 52aa3d84-985c-4c57-ace1-c85251120227_00000000000000000_0001_0001_VCD.csv
  */
-TEST(ParserTest, CreateFileSuccessCase) {
+TEST(ParserTest, firstLineShouldBeUsedTOGetCorrectFileName) {
     Parser p;
     vector<string> lineToCsv;
     lineToCsv.push_back("# 52aa3d84-985c-4c57-ace1-c85251120227");
@@ -55,6 +56,17 @@ TEST(ParserTest, CreateFileSuccessCase) {
     lineToCsv.push_back("type=VCD");
     string expectedFileName = "52aa3d84-985c-4c57-ace1-c85251120227_00000000000000000_0001_0001_VCD.csv";
     
-    EXPECT_EQ(expectedFileName, p.create_file(lineToCsv));
+    EXPECT_EQ(expectedFileName, p.createFile(lineToCsv));
 }
+
+/*
+ * Tests that if first line is empty, then file name is returned as empty string.
+ */
+TEST(ParserTest, emptyFirstLineShouldReturnNullString) {
+    Parser p;
+    vector<string> lineToCsv;
+    
+    EXPECT_EQ("", p.createFile(lineToCsv));
+}
+
 
