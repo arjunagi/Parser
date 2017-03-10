@@ -72,5 +72,5 @@ TEST_F(DatabaseTest, incorrectInsertionShouldReturnError) {
     string insertQuery = "INSERT INTO vcd (timestamp, data_point,value) VALUES ('1234', 'abc', '1.2.3', 'xyz');";
     sqlite3_stmt *insertStmt;
     sqlite3_prepare(&db.getDb(), insertQuery.c_str(), insertQuery.size(), &insertStmt, NULL);
-    EXPECT_NE(sqlite3_step(insertStmt), SQLITE_MISUSE);
+    EXPECT_EQ(sqlite3_step(insertStmt), SQLITE_MISUSE);
 }
