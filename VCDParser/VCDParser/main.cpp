@@ -7,7 +7,7 @@
 //
 
 /*
- * Server which receives the VCD data, parses it and stores it in a file and also in SQLite DB.
+ * Server which receives the VCD data, parses it and stores it in a file and also in SQLite database.
  */
 
 #include <iostream>
