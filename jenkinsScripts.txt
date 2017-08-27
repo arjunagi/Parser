@@ -1,0 +1,29 @@
+# Build the VCDParserClint project
+cd /Users/Shared/Jenkins/Home/workspace/VCDFileReaderWithTestOutput/VCDParserClient
+xcodebuild -project VCDParserClient.xcodeproj -alltargets -configuration Debug
+
+# Build the VCDParserServer project
+cd /Users/Shared/Jenkins/Home/workspace/VCDFileReaderWithTestOutput/VCDParser
+xcodebuild -project VCDParserServer.xcodeproj -alltargets -configuration Debug
+
+# Script will not fail due to individual command failure
+set +e
+
+set +x
+echo $ "\n\n**** Running Client Unit Tests ****"
+set -x
+cd /Users/Karthik/Documents/parser_project/VCDParserClient/Build/Products/Debug
+rm clientResults.xml
+./VCDParserClientUnitTests --log_format=XML --log_sink=clientResults.xml --log_level=all --report_level=no
+# Copy the result xml to Jenkins workspace for xUnit plugin access
+cp clientResults.xml /Users/Shared/Jenkins/Home/workspace/VCDFileReaderWithTestOutput/.
+
+
+set +x
+echo $ "\n\n**** Running Server Unit Tests ****"
+set -x
+cd /Users/Karthik/Documents/parser_project/VCDParser/Build/Products/Debug
+rm serverResults.xml
+./VCDParserServerUnitTests --gtest_output=xml:serverResults.xml
+# Copy the result xml to Jenkins workspace for xUnit plugin access
+cp serverResults.xml /Users/Shared/Jenkins/Home/workspace/VCDFileReaderWithTestOutput/.
